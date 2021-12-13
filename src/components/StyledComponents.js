@@ -4,6 +4,8 @@ export const MusicSection = styled.section`
   width: 80%;
   display: grid;
   grid-gap: 20px 20px;
+  position: absolute;
+  top: 80vh;
 
   @media (min-width: 650px) {
     grid-template-columns: 50% 50%;
@@ -46,5 +48,48 @@ export const MusicTagWrapper = styled.div`
   gap: 5px;
   @media (min-width: 800px) {
     grid-template-columns: repeat(4, 1fr);
+  }
+`
+
+export const Button = styled.button`
+  padding: 13px;
+  margin: 10px;
+  border-radius: 20px;
+  border: solid 2px #b9314f;
+  background-color: #b9314f;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  &:hover {
+    border: solid 3px #b9314f;
+    background-color: #fff;
+    color: #b9314f;
+  }
+  @media (max-width: 610px) {
+    font-size: 11px;
+    padding: 10px;
+  }
+`
+export const Select = styled.select`
+  padding: 11px;
+  margin: 10px;
+  border-radius: 20px;
+  border: solid 3px #b9314f;
+  background-color: #b9314f;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+  &:hover {
+    border: solid 2px #b9314f;
+    background-color: #fff;
+    color: #b9314f;
+  }
+  @media (max-width: 610px) {
+    font-size: 11px;
+    padding: 8px;
   }
 `
